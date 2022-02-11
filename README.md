@@ -2,9 +2,7 @@
 
 # Drum Kit 🥁
 
-### JS 30 Challenge-1
-
-A Virtual Drum is a hub, where you can play beats for drums with virtual drum kit.
+A Virtual Drum is a hub, where you can play beats for drums with virtual drum kit by pressing `ASDFGHJKL` keys or by clicking it.
 
 <p align="center"><a href="https://github.com/sahil-awasthi"><img width="100%" src="./drumKit.gif" alt="Drum kit website being displayed as gif"/></a></p>
 

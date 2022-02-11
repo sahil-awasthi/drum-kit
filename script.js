@@ -1,3 +1,6 @@
+const keys = Array.from(document.querySelectorAll(".key"));
+const keyContainer = document.querySelector(".keys");
+
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
   e.target.classList.remove("playing");
@@ -13,6 +16,10 @@ function playSound(e) {
   audio.play();
 }
 
-const keys = Array.from(document.querySelectorAll(".key"));
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 window.addEventListener("keydown", playSound);
+
+keyContainer.addEventListener("click", function (e) {
+  const keyPressed = e.target.closest(".key");
+  playSound({ keyCode: keyPressed.dataset.key });
+});
